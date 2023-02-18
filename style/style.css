@@ -1,0 +1,155 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    padding: 50px;
+    background-color: #092B9C;
+    height: 30px;
+    margin-bottom: 0px;
+}
+
+ul li{
+    list-style-type: none;
+    border: #F9F9F9 solid 2px;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color: #F9F9F9 ;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-family: 'Cinzel';
+}
+
+main{
+    font-family: 'Cinzel';
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: #F9F9F9;
+    font-size: larger;
+}
+
+main img{
+    height: 800px;
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+.logo{
+    height: 800px;
+    width: 100%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+img {
+    width: 50%;
+    margin-top: 0px;
+}
+
+h1{
+    height: 300px;
+    width: 60%;
+    margin: auto;
+    top: 20%;
+
+}
+
+h2{
+    font-family: 'Raleway';
+    padding: 40px;
+    background-color: #0E82D2;
+    color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+}
+
+.direLocal{
+    background-color: #3D3E44;
+    color: #F9F9F9;
+}
+
+footer{
+    padding: 50px;
+    background-color: #0C2063;
+    font-family: 'Raleway';
+    color: #F9F9F9;
+}
+
+hr{
+    size: 15px;
+    width: 30%;
+    justify-content: center;
+}
+
+div p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.icons{
+    width: 30px;
+    height: 30px;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.infUno{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 2px;
+}
+
+.infoDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 500px;
+}
+
+/* ShopSections */
+
+.imgShopSection{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.iconShop{
+    height: 150px;
+    width: 150px;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.imgLocales{
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-template-areas: "Shopping Moreno";
+    justify-items: start;
+    background-color: #3D3E44
+}
