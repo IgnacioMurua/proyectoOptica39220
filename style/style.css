@@ -1,3 +1,4 @@
+/* NAV, FOOTER */
 * {
     margin: 0px;
     padding: 0px;
@@ -5,7 +6,7 @@
 
 header{
     padding: 50px;
-    background-color: #092B9C;
+    background-color: #0C2063;
     height: 30px;
     margin-bottom: 0px;
 }
@@ -28,56 +29,6 @@ nav ul{
     font-family: 'Cinzel';
 }
 
-main{
-    font-family: 'Cinzel';
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    color: #F9F9F9;
-    font-size: larger;
-}
-
-main img{
-    height: 800px;
-    width: 100%;
-    margin: auto;
-    margin-top: 0px;
-}
-
-.logo{
-    height: 800px;
-    width: 100%;
-    margin: auto;
-    margin-top: 0px;
-}
-
-img {
-    width: 50%;
-    margin-top: 0px;
-}
-
-h1{
-    height: 300px;
-    width: 60%;
-    margin: auto;
-    top: 20%;
-
-}
-
-h2{
-    font-family: 'Raleway';
-    padding: 40px;
-    background-color: #0E82D2;
-    color: #F9F9F9;
-    display: flex;
-    justify-content: center;
-}
-
-.direLocal{
-    background-color: #3D3E44;
-    color: #F9F9F9;
-}
-
 footer{
     padding: 50px;
     background-color: #0C2063;
@@ -85,16 +36,10 @@ footer{
     color: #F9F9F9;
 }
 
-hr{
-    size: 15px;
-    width: 30%;
-    justify-content: center;
-}
-
-div p {
+.infFooter {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -109,11 +54,129 @@ div p {
     justify-content: center;
 }
 
-.infUno{
+/* CONTENIDO*/
+h2, h1{
+    font-family: 'Raleway';
+    padding: 40px;
+    background-color: #0E82D2;
+    color: #F9F9F9;
+    display: flex;
+    justify-content: center;
+}
+
+.tiendaProductos{
+    width: 100%;
+    display: grid;
+    grid-template-areas:'producto1 producto2'
+                        'valor1 valor2'
+                        'producto3 producto4'
+                        'valor3 valor4'
+                        'producto5 producto6'
+                        'valor5 valor6'
+                        'producto7 producto8'
+                        'valor7 valor8';
+    grid-template-columns: 35% 35%;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: stretch;
+}
+
+.maps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div iframe{
+    width: 75%;
+}
+
+.producto1{
+    grid-area: producto1;
+}
+
+.valor1{
+    grid-area: valor1;
+}
+
+.producto2{
+    grid-area: producto2;
+}
+
+.valor2{
+    grid-area: valor2;
+}
+
+.producto3{
+    grid-area: producto3;
+}
+
+.valor3{
+    grid-area: valor3;
+}
+
+.producto4{
+    grid-area: producto4;
+}
+
+.valor4{
+    grid-area: valor4;
+}
+
+.producto5{
+    grid-area: producto5;
+}
+
+.valor5{
+    grid-area: valor5;
+}
+
+.producto6{
+    grid-area: producto6;
+}
+
+.valor6{
+    grid-area: valor6;
+}
+
+.producto7{
+    grid-area: producto7;
+}
+
+.valor7{
+    grid-area: valor7;
+}
+
+.producto8{
+    grid-area: producto8;
+}
+
+.valor8{
+    grid-area: valor8;
+}
+
+.imgPortada{
+    background-color: #0F0F10;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-right: 2px;
+    width: 100%;
+}
+
+h3{
+    padding: 30px;
+}
+
+
+
+
+
+
+/* .infUno{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 2px;              TEXTO
 }
 
 .infoDos{
@@ -121,35 +184,4 @@ div p {
     flex-direction: row;
     justify-content: center;
     margin-top: 500px;
-}
-
-/* ShopSections */
-
-.imgShopSection{
-    justify-items: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-}
-
-.iconShop{
-    height: 150px;
-    width: 150px;
-    justify-items: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-}
-
-.imgLocales{
-    justify-items: center;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
-    grid-template-areas: "Shopping Moreno";
-    justify-items: start;
-    background-color: #3D3E44
 }
