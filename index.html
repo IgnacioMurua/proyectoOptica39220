@@ -1,53 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./style/style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Raleway:ital,wght@0,300;1,100&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Raleway:ital,wght@0,300;1,100&display=swap"
+        rel="stylesheet">
     <title>Optica Murua</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">INICIO</a> 
-                </li>
-                <li>
-                    <a href="./sections/tienda.html">TIENDA</a> 
-                </li>
-                <li>
-                    <a href="./sections/contacto.html">CONTACTO</a> 
-                </li>
-                <li>
-                    <a href="./sections/ubicacion.html">UBICACIÓN</a> 
-                </li>
-                <li>
-                    <a href="./sections/nuestraVision.html">NUESTRA VISIÓN</a> 
-                </li>
-            </ul>
+    <div class="grillaGeneral">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections/ubicacion.html">Ubicación</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sections/nuestraVision.html">Nuestra Visión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header>
-    <h1>TU OPTICA DE CONFIANZA</h1>
-    <section class="imgPortada">
-        <img src="./img/modeloPortadaYLogo.png" alt="modeloOpticaMurua">
-        </div>
-    </section>
-    <footer>
-        <div class="redes">
-            <a href="https://www.facebook.com/centroopticomurua/" target="_blank"><img class="icons" src="./img/icons/facebook.svg" alt="facebook"></a>
-            <a href="https://www.instagram.com/opticamuruabariloche/?hl=es" target="_blank"><img class="icons" src="./img/icons/instagram.svg" alt=""></a>
-            <a href="https://wa.me/2944327041" target="_blank"><img class="icons" src="./img/icons/whatsapp.svg" alt=""></a>
-        </div>
-        <div class="infFooter">
-            <p class="infUno">Horarios de atención:</p>
-            <p class="infDos">Lunes a sabado 10:00 a 21:30</p> 
-            <p class="infDos">Domingos 13:00 a 21:30</p>
-        </div>
-    </footer>
+    </div>
+        <section class="portada">
+            <h1>TU OPTICA DE CONFIANZA</h1>
+            <img class="imgPortada" src="./img/modeloPortadaYLogo.png" alt="modeloOpticaMurua">
+        </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
 </body>
+<footer>
+    <div class="redes">
+        <a href="https://www.facebook.com/centroopticomurua/" target="_blank"><img class="icons"
+                src="./img/icons/facebook.svg" alt="facebook"></a>
+        <a href="https://www.instagram.com/opticamuruabariloche/?hl=es" target="_blank"><img class="icons"
+                src="./img/icons/instagram.svg" alt=""></a>
+        <a href="https://wa.me/2944327041" target="_blank"><img class="icons" src="./img/icons/whatsapp.svg" alt=""></a>
+    </div>
+    <div class="infFooter">
+        <p class="infUno">Horarios de atención:</p>
+        <p class="infDos">Lunes a sabado 10:00 a 21:30</p>
+        <p class="infDos">Domingos 13:00 a 21:30</p>
+    </div>
+</footer>
+
 </html>

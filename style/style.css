@@ -1,14 +1,11 @@
-/* NAV, FOOTER */
 * {
     margin: 0px;
     padding: 0px;
 }
 
-header{
-    padding: 50px;
+nav{
+    grid-area: nav;
     background-color: #0C2063;
-    height: 30px;
-    margin-bottom: 0px;
 }
 
 ul li{
@@ -23,13 +20,24 @@ a{
 }
 
 nav ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    align-items: flex-start;
     font-family: 'Cinzel';
 }
 
+body{
+    font-family: 'Raleway';
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+img{
+    width: 300px;
+}
+
 footer{
+    grid-area: footer;
     padding: 50px;
     background-color: #0C2063;
     font-family: 'Raleway';
@@ -54,7 +62,30 @@ footer{
     justify-content: center;
 }
 
-/* CONTENIDO*/
+.imgPortada{
+    background-color: #0F0F10;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: 100%;
+    grid-area: imgPortada;
+}
+
+.imgPortada:hover{
+    transform: scale(1.2);
+}
+
+.imgPortada:hover{
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+
+h3{
+    padding: 30px;
+}
+
 h2, h1{
     font-family: 'Raleway';
     padding: 40px;
@@ -62,23 +93,6 @@ h2, h1{
     color: #F9F9F9;
     display: flex;
     justify-content: center;
-}
-
-.tiendaProductos{
-    width: 100%;
-    display: grid;
-    grid-template-areas:'producto1 producto2'
-                        'valor1 valor2'
-                        'producto3 producto4'
-                        'valor3 valor4'
-                        'producto5 producto6'
-                        'valor5 valor6'
-                        'producto7 producto8'
-                        'valor7 valor8';
-    grid-template-columns: 35% 35%;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: stretch;
 }
 
 .maps{
@@ -90,6 +104,12 @@ h2, h1{
 div iframe{
     width: 75%;
 }
+
+
+h1{
+    grid-area: titulo;
+}
+
 
 .producto1{
     grid-area: producto1;
@@ -155,33 +175,54 @@ div iframe{
     grid-area: valor8;
 }
 
-.imgPortada{
-    background-color: #0F0F10;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+.grillaGeneral{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "nav"
+    "titulo"
+    "imgPortada"
+    "footer";
 }
 
-h3{
-    padding: 30px;
+@media screen (min-width: 500px) {
+    .grillaGeneral{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        "nav nav"
+        "titulo titulo"
+        "imgPortada imgPortada"
+        "footer footer"
+    } 
 }
 
-
-
-
-
-
-/* .infUno{ 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-right: 2px;              TEXTO
+@media screen (min-width: 769px) {
+    .grillaGeneral{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+        "nav nav nav"
+        "titulo titulo titulo"
+        "imgPortada imgPortada imgPortada"
+        "footer footer footer"
+    } 
 }
 
-.infoDos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 500px;
+@media screen (min-width: 1025px) {
+    .tiendaProductos{
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        'producto1 producto2'
+        'valor1 valor2'
+        'producto3 producto4'
+        'valor3 valor4'
+        'producto5 producto6'
+        'valor5 valor6'
+        'producto7 producto8'
+        'valor7 valor8';
+        grid-template-columns: 35% 35%;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: stretch;
+    } 
 }
