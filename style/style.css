@@ -8,6 +8,11 @@ nav{
     background-color: #0C2063;
 }
 
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end;
+}
+
 ul li{
     list-style-type: none;
     border: #F9F9F9 solid 2px;
@@ -22,6 +27,13 @@ a{
 nav ul{
     align-items: flex-start;
     font-family: 'Cinzel';
+}
+
+.logoNav{
+    height: 200px;
+    width: 200px;
+    margin-right: 00px;
+    margin-left: 0px;
 }
 
 body{
@@ -72,33 +84,98 @@ footer{
     grid-area: imgPortada;
 }
 
-.imgPortada:hover{
+.boton:hover{
     transform: scale(1.2);
 }
 
-.imgPortada:hover{
+.boton:hover{
     transition-property: all;
     transition-duration: 3s;
 }
 
-
-h3{
-    padding: 30px;
+.boton-2:hover{
+    transform: scale(1.2);
 }
 
-h2, h1{
+.boton-2:hover{
+    transition-property: all;
+    transition-duration: 3s;
+}
+
+.boton{
+    background-color: #154360;
+    padding: 30px;
+    color: #F9F9F9;
+    border: 1px;
+    border-radius: 20px;
+    
+
+}
+
+.boton-2{
+    background-color: #154360;
+    padding: 10px;
+    color: #F9F9F9;
+    border: 1px;
+    border-radius: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: large;
+    font-weight: bold;
+    background-color: #597DA2;
+
+    width: 100%;
+    padding: 20px;
+}
+
+.form-control{
+    width: 100%;
+}
+
+.contacto{
+    width: 100%;
+    padding: 20px;
+    
+}
+
+.encabezados{
     font-family: 'Raleway';
     padding: 40px;
-    background-color: #0E82D2;
+    background-color: #34495E;
     color: #F9F9F9;
     display: flex;
     justify-content: center;
+    margin: 0px;
 }
 
 .maps{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
+}
+
+.direcciones{
+    padding: 25px;
+    font-weight: bold;
+}
+
+.vision{
+    padding: 215px;
+    font-size: larger;
+    color: #F9F9F9 ;
+    background-color: #34495E;
+}
+
+.vision-2{
+    padding: 215px;
+    font-size: larger;
+    color: #F9F9F9 ;
+    background-color: #496683;
 }
 
 div iframe{
