@@ -8,15 +8,7 @@ nav{
     background-color: #0C2063;
 }
 
-.navbar-collapse{
-    display: flex;
-    justify-content: flex-end;
-}
 
-ul li{
-    list-style-type: none;
-    border: #F9F9F9 solid 2px;
-}
 
 a{
     text-decoration: none;
@@ -24,9 +16,11 @@ a{
     color: #F9F9F9 ;
 }
 
+
 nav ul{
-    align-items: flex-start;
+    justify-content: flex-start;
     font-family: 'Cinzel';
+    font-weight: bolder
 }
 
 .logoNav{
@@ -42,6 +36,11 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+}
+
+.bodyB{
+    background-color: #496683;
 }
 
 img{
@@ -51,7 +50,7 @@ img{
 footer{
     grid-area: footer;
     padding: 50px;
-    background-color: #0C2063;
+    background-color: #222F3D;
     font-family: 'Raleway';
     color: #F9F9F9;
 }
@@ -75,7 +74,6 @@ footer{
 }
 
 .imgPortada{
-    background-color: #0F0F10;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -103,13 +101,12 @@ footer{
 }
 
 .boton{
+    font-weight: bold;
     background-color: #154360;
     padding: 30px;
     color: #F9F9F9;
     border: 1px;
     border-radius: 20px;
-    
-
 }
 
 .boton-2{
@@ -134,12 +131,27 @@ footer{
 
 .form-control{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.valor{
+    padding: 7px;
+    background-color: #34495E;
+    color: #F9F9F9;
+    font-weight: bolder;
+    border: 4px solid #34495E;
+    border-radius: 50px;
 }
 
 .contacto{
-    width: 100%;
     padding: 20px;
-    
+    border: 7px solid #34495E;
+}
+
+.pForm{
+    color: #F9F9F9;
 }
 
 .encabezados{
@@ -162,19 +174,23 @@ footer{
 .direcciones{
     padding: 25px;
     font-weight: bold;
+    color: #F9F9F9;
 }
 
 .vision{
-    padding: 215px;
+    padding: 70px;
     font-size: larger;
     color: #F9F9F9 ;
-    background-color: #34495E;
+    border: 7px solid #34495E;
+    background-color: #496683;
+    display: flex;
 }
 
 .vision-2{
-    padding: 215px;
+    padding: 70px;
     font-size: larger;
     color: #F9F9F9 ;
+    border: 7px solid #34495E;
     background-color: #496683;
 }
 
@@ -262,7 +278,7 @@ h1{
     "footer";
 }
 
-@media screen (min-width: 500px) {
+@media screen and (min-width: 350px) {
     .grillaGeneral{
         grid-template-columns: 1fr 1fr;
         grid-template-areas:
@@ -271,23 +287,44 @@ h1{
         "imgPortada imgPortada"
         "footer footer"
     } 
+    .valor{
+        width: 35%;
+        padding: 7px;
+        background-color: #34495E;
+        color: #F9F9F9;
+        font-weight: bolder;
+        border: 4px solid #34495E;
+        border-radius: 50px;
+    }
+    
 }
 
-@media screen (min-width: 769px) {
+@media screen and (min-width: 769px) {
     .grillaGeneral{
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         grid-template-areas:
-        "nav nav nav"
-        "titulo titulo titulo"
-        "imgPortada imgPortada imgPortada"
-        "footer footer footer"
+        "nav"
+        "titulo"
+        "imgPortada"
+        "footer"
     } 
+    .valor{
+        width: 35%;
+        padding: 7px;
+        background-color: #34495E;
+        color: #F9F9F9;
+        font-weight: bolder;
+        border: 4px solid #34495E;
+        border-radius: 50px;
+    }
+    
 }
 
-@media screen (min-width: 1025px) {
+@media screen and (min-width: 1025px) {
     .tiendaProductos{
         width: 100%;
         display: grid;
+        grid-template-columns: 1fr 1fr;
         grid-template-areas:
         'producto1 producto2'
         'valor1 valor2'
@@ -298,8 +335,10 @@ h1{
         'producto7 producto8'
         'valor7 valor8';
         grid-template-columns: 35% 35%;
+        row-gap: 69px;
         align-items: center;
         justify-content: space-around;
-        justify-items: stretch;
+        justify-items: center;
+        padding: 100px;
     } 
 }
