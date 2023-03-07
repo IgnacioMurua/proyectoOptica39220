@@ -5,10 +5,17 @@
 
 nav{
     grid-area: nav;
-    background-color: #0C2063;
 }
 
+header{
+    
+}
 
+.tiendaProductos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 a{
     text-decoration: none;
@@ -16,12 +23,22 @@ a{
     color: #F9F9F9 ;
 }
 
+.logo{
+    width: 115px;
+}
 
-nav ul{
-    justify-content: flex-start;
+.container-fluid{
+    display: flex;
+    flex-direction: row-reverse;
     font-family: 'Cinzel';
     font-weight: bolder
 }
+
+.navbar-toggler{
+    background-color:#B2BABB ;
+}
+
+
 
 .logoNav{
     height: 200px;
@@ -79,6 +96,7 @@ footer{
     justify-content: center;
 
     width: 100%;
+    height: 17rem;
     grid-area: imgPortada;
 }
 
@@ -123,7 +141,8 @@ footer{
     align-items: center;
     font-size: large;
     font-weight: bold;
-    background-color: #597DA2;
+    background-color: #496683;
+    color: #F9F9F9;
 
     width: 100%;
     padding: 20px;
@@ -143,6 +162,23 @@ footer{
     font-weight: bolder;
     border: 4px solid #34495E;
     border-radius: 50px;
+}
+
+.tiendaProductos{
+    padding: 10px;
+}
+
+.card{
+
+    border-radius: 4px;
+    padding: 19px;
+    max-height: 500px;
+}
+
+.btn-primary{
+    background-color: #34495E;
+    border: 4px solid #34495E;
+    border-radius: 50px
 }
 
 .contacto{
@@ -278,28 +314,7 @@ h1{
     "footer";
 }
 
-@media screen and (min-width: 350px) {
-    .grillaGeneral{
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        "nav nav"
-        "titulo titulo"
-        "imgPortada imgPortada"
-        "footer footer"
-    } 
-    .valor{
-        width: 35%;
-        padding: 7px;
-        background-color: #34495E;
-        color: #F9F9F9;
-        font-weight: bolder;
-        border: 4px solid #34495E;
-        border-radius: 50px;
-    }
-    
-}
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 400px) {
     .grillaGeneral{
         grid-template-columns: 1fr;
         grid-template-areas:
@@ -317,10 +332,62 @@ h1{
         border: 4px solid #34495E;
         border-radius: 50px;
     }
+    .card {
+        width: 22rem!important;
+    }
     
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width:768px) {
+    .grillaGeneral{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "nav"
+        "titulo"
+        "imgPortada"
+        "footer"
+    } 
+    .valor{
+        background-color: #34495E;
+        color: #F9F9F9;
+        font-weight: bolder;
+        border: 4px solid #34495E;
+        border-radius: 50px;
+        width: 40%;
+        padding: 11px;
+    }
+    .logo{
+        width: 150px;
+    }
+    .tiendaProductos{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+        'producto1 producto2'
+        'valor1 valor2'
+        'producto3 producto4'
+        'valor3 valor4'
+        'producto5 producto6'
+        'valor5 valor6'
+        'producto7 producto8'
+        'valor7 valor8';
+        grid-template-columns: 35% 35%;
+        align-items: center;
+        justify-content: space-around;
+        justify-items: center;
+        padding: 10px;
+    }
+    .card {
+        width: 20rem!important;
+    }
+    .imgPortada{
+        width: 100%;
+        height: 24rem;
+}
+}
+
+@media screen and (min-width: 992px) {
     .tiendaProductos{
         width: 100%;
         display: grid;
@@ -336,9 +403,20 @@ h1{
         'valor7 valor8';
         grid-template-columns: 35% 35%;
         row-gap: 69px;
+        column-gap: 140px;
         align-items: center;
         justify-content: space-around;
         justify-items: center;
-        padding: 100px;
+        padding: 65px;
     } 
+    .container-fluid{
+        flex-direction: row;
+    }
+    .card {
+        width: 30rem!important;
+    }
+    .imgPortada{
+        width: 100%;
+        height: 55rem;
+}
 }
