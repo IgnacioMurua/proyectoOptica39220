@@ -1,422 +1,326 @@
+nav {
+  grid-area: nav;
+}
+nav a {
+  text-decoration: none;
+  padding: 20px;
+  color: #F9F9F9;
+}
+nav .container-fluid {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Cinzel";
+  font-weight: bolder;
+}
+nav .navbar-toggler {
+  background-color: #B2BABB;
+}
+nav .logo {
+  width: 115px;
+}
+
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-nav{
-    grid-area: nav;
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: #F9F9F9;
 }
 
-header{
-    
+.encabezados {
+  font-family: "Raleway";
+  padding: 40px;
+  background-color: #34495E;
+  color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
 }
 
-.tiendaProductos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+h1 {
+  grid-area: titulo;
 }
 
-a{
-    text-decoration: none;
-    padding: 20px;
-    color: #F9F9F9 ;
+body {
+  font-family: "Raleway";
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body img {
+  width: 100%;
+}
+body img .imgPortada {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 17rem;
+  grid-area: imgPortada;
+}
+body .bodyB {
+  background-color: #496683;
 }
 
-.logo{
-    width: 115px;
+.grillaGeneral {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "titulo" "imgPortada" "footer";
 }
 
-.container-fluid{
-    display: flex;
-    flex-direction: row-reverse;
-    font-family: 'Cinzel';
-    font-weight: bolder
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: #496683;
+  color: #F9F9F9;
+  width: 100%;
+  padding: 20px;
+}
+.form .form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.navbar-toggler{
-    background-color:#B2BABB ;
+.boton {
+  font-weight: bold;
+  background-color: #154360;
+  padding: 30px;
+  color: #F9F9F9;
+  border: 1px;
+  border-radius: 20px;
+}
+.boton:hover {
+  transform: scale(1.2);
+}
+.boton:hover {
+  transition-property: all;
+  transition-duration: 3s;
 }
 
-
-
-.logoNav{
-    height: 200px;
-    width: 200px;
-    margin-right: 00px;
-    margin-left: 0px;
+.boton-2 {
+  background-color: #154360;
+  padding: 10px;
+  color: #F9F9F9;
+  border: 1px;
+  border-radius: 10px;
+}
+.boton-2:hover {
+  transform: scale(1.2);
+}
+.boton-2:hover {
+  transition-property: all;
+  transition-duration: 3s;
 }
 
-body{
-    font-family: 'Raleway';
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
+.tiendaProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.tiendaProductos .card {
+  border-radius: 4px;
+  padding: 5px;
+  max-height: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.tiendaProductos .card .btn-primary {
+  background-color: #34495E;
+  border: 4px solid #34495E;
+  border-radius: 50px;
 }
 
-.bodyB{
-    background-color: #496683;
+.contacto {
+  padding: 20px;
+  border: 7px solid #34495E;
+  background-color: #496683;
+}
+.contacto .pForm {
+  color: #F9F9F9;
 }
 
-img{
-    width: 300px;
+.vision {
+  padding: 70px;
+  font-size: larger;
+  color: #F9F9F9;
+  border: 7px solid #34495E;
+  background-color: #496683;
+  display: flex;
 }
 
-footer{
-    grid-area: footer;
-    padding: 50px;
-    background-color: #222F3D;
-    font-family: 'Raleway';
-    color: #F9F9F9;
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #496683;
+  padding-bottom: 3rem;
+}
+.maps .direcciones {
+  padding: 25px;
+  font-weight: bold;
+  color: #F9F9F9;
+}
+.maps div iframe {
+  width: 100%;
 }
 
-.infFooter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.clientes {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+}
+.clientes .card {
+  margin: 19px;
+  max-height: 500px;
+  border: 2px solid #34495E;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.clientes .card .card-text {
+  padding: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.clientes .card .card-title {
+  font-size: 24px;
+  font-weight: bolder;
+  color: #154360;
+}
+.clientes .card .col-md-8 {
+  display: flex;
+  align-items: center;
+}
+.clientes .card .img-fluid {
+  max-width: 100%;
+  height: 100%;
 }
 
-
-.icons{
-    width: 30px;
-    height: 30px;
+footer {
+  grid-area: footer;
+  padding: 50px;
+  background-color: #222F3D;
+  font-family: "Raleway";
+  color: #F9F9F9;
+}
+footer .infFooter {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
+}
+footer .icons {
+  width: 30px;
+  height: 30px;
+}
+footer .redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 4rem;
 }
 
-.redes{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.imgPortada{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-
-    width: 100%;
-    height: 17rem;
-    grid-area: imgPortada;
-}
-
-.boton:hover{
-    transform: scale(1.2);
-}
-
-.boton:hover{
-    transition-property: all;
-    transition-duration: 3s;
-}
-
-.boton-2:hover{
-    transform: scale(1.2);
-}
-
-.boton-2:hover{
-    transition-property: all;
-    transition-duration: 3s;
-}
-
-.boton{
-    font-weight: bold;
-    background-color: #154360;
-    padding: 30px;
-    color: #F9F9F9;
-    border: 1px;
-    border-radius: 20px;
-}
-
-.boton-2{
-    background-color: #154360;
-    padding: 10px;
-    color: #F9F9F9;
-    border: 1px;
-    border-radius: 10px;
-}
-
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: large;
-    font-weight: bold;
-    background-color: #496683;
-    color: #F9F9F9;
-
-    width: 100%;
-    padding: 20px;
-}
-
-.form-control{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.valor{
+@media screen and (min-width: 400px) {
+  .grillaGeneral {
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "titulo" "imgPortada" "footer";
+  }
+  .valor {
+    width: 35%;
     padding: 7px;
     background-color: #34495E;
     color: #F9F9F9;
     font-weight: bolder;
     border: 4px solid #34495E;
     border-radius: 50px;
+  }
+  .card {
+    width: 22rem !important;
+  }
+  .clientes .card .img-fluid {
+    max-width: 100%;
+    height: 20rem;
+  }
 }
-
-.tiendaProductos{
-    padding: 10px;
-}
-
-.card{
-
-    border-radius: 4px;
-    padding: 19px;
-    max-height: 500px;
-}
-
-.btn-primary{
-    background-color: #34495E;
-    border: 4px solid #34495E;
-    border-radius: 50px
-}
-
-.contacto{
-    padding: 20px;
-    border: 7px solid #34495E;
-}
-
-.pForm{
-    color: #F9F9F9;
-}
-
-.encabezados{
-    font-family: 'Raleway';
-    padding: 40px;
-    background-color: #34495E;
-    color: #F9F9F9;
-    display: flex;
-    justify-content: center;
-    margin: 0px;
-}
-
-.maps{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10px;
-}
-
-.direcciones{
-    padding: 25px;
-    font-weight: bold;
-    color: #F9F9F9;
-}
-
-.vision{
-    padding: 70px;
-    font-size: larger;
-    color: #F9F9F9 ;
-    border: 7px solid #34495E;
-    background-color: #496683;
-    display: flex;
-}
-
-.vision-2{
-    padding: 70px;
-    font-size: larger;
-    color: #F9F9F9 ;
-    border: 7px solid #34495E;
-    background-color: #496683;
-}
-
-div iframe{
-    width: 75%;
-}
-
-
-h1{
-    grid-area: titulo;
-}
-
-
-.producto1{
-    grid-area: producto1;
-}
-
-.valor1{
-    grid-area: valor1;
-}
-
-.producto2{
-    grid-area: producto2;
-}
-
-.valor2{
-    grid-area: valor2;
-}
-
-.producto3{
-    grid-area: producto3;
-}
-
-.valor3{
-    grid-area: valor3;
-}
-
-.producto4{
-    grid-area: producto4;
-}
-
-.valor4{
-    grid-area: valor4;
-}
-
-.producto5{
-    grid-area: producto5;
-}
-
-.valor5{
-    grid-area: valor5;
-}
-
-.producto6{
-    grid-area: producto6;
-}
-
-.valor6{
-    grid-area: valor6;
-}
-
-.producto7{
-    grid-area: producto7;
-}
-
-.valor7{
-    grid-area: valor7;
-}
-
-.producto8{
-    grid-area: producto8;
-}
-
-.valor8{
-    grid-area: valor8;
-}
-
-.grillaGeneral{
-    display: grid;
+@media screen and (min-width: 768px) {
+  .grillaGeneral {
     grid-template-columns: 1fr;
-    grid-template-areas: 
-    "nav"
-    "titulo"
-    "imgPortada"
-    "footer";
+    grid-template-areas: "nav" "titulo" "imgPortada" "footer";
+  }
+  .valor {
+    background-color: #34495E;
+    color: color_1;
+    font-weight: bolder;
+    border: 4px solid #34495E;
+    border-radius: 50px;
+    width: 40%;
+    padding: 11px;
+  }
+  .logo {
+    width: 150px;
+  }
+  .tiendaProductos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "producto1 producto2" "valor1 valor2" "producto3 producto4" "valor3 valor4" "producto5 producto6" "valor5 valor6" "producto7 producto8" "valor7 valor8";
+    grid-template-columns: 35% 35%;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 10px;
+  }
+  .card {
+    width: 20rem !important;
+  }
+  .imgPortada {
+    width: 100%;
+    height: 24rem;
+  }
+}
+@media screen and (min-width: 993px) {
+  .tiendaProductos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "producto1 producto2" "valor1 valor2" "producto3 producto4" "valor3 valor4" "producto5 producto6" "valor5 valor6" "producto7 producto8" "valor7 valor8";
+    grid-template-columns: 35% 35%;
+    row-gap: 69px;
+    column-gap: 140px;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    padding: 65px;
+  }
+  .navbar .container-fluid {
+    display: flex;
+    flex-direction: row;
+  }
+  .card {
+    width: 30rem !important;
+  }
+  .imgPortada {
+    width: 100%;
+    height: 55rem;
+  }
+  .clientes .card .img-fluid {
+    max-width: 100%;
+    height: 100%;
+  }
 }
 
-@media screen and (min-width: 400px) {
-    .grillaGeneral{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "titulo"
-        "imgPortada"
-        "footer"
-    } 
-    .valor{
-        width: 35%;
-        padding: 7px;
-        background-color: #34495E;
-        color: #F9F9F9;
-        font-weight: bolder;
-        border: 4px solid #34495E;
-        border-radius: 50px;
-    }
-    .card {
-        width: 22rem!important;
-    }
-    
-}
-
-@media screen and (min-width:768px) {
-    .grillaGeneral{
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "nav"
-        "titulo"
-        "imgPortada"
-        "footer"
-    } 
-    .valor{
-        background-color: #34495E;
-        color: #F9F9F9;
-        font-weight: bolder;
-        border: 4px solid #34495E;
-        border-radius: 50px;
-        width: 40%;
-        padding: 11px;
-    }
-    .logo{
-        width: 150px;
-    }
-    .tiendaProductos{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        'producto1 producto2'
-        'valor1 valor2'
-        'producto3 producto4'
-        'valor3 valor4'
-        'producto5 producto6'
-        'valor5 valor6'
-        'producto7 producto8'
-        'valor7 valor8';
-        grid-template-columns: 35% 35%;
-        align-items: center;
-        justify-content: space-around;
-        justify-items: center;
-        padding: 10px;
-    }
-    .card {
-        width: 20rem!important;
-    }
-    .imgPortada{
-        width: 100%;
-        height: 24rem;
-}
-}
-
-@media screen and (min-width: 992px) {
-    .tiendaProductos{
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-        'producto1 producto2'
-        'valor1 valor2'
-        'producto3 producto4'
-        'valor3 valor4'
-        'producto5 producto6'
-        'valor5 valor6'
-        'producto7 producto8'
-        'valor7 valor8';
-        grid-template-columns: 35% 35%;
-        row-gap: 69px;
-        column-gap: 140px;
-        align-items: center;
-        justify-content: space-around;
-        justify-items: center;
-        padding: 65px;
-    } 
-    .container-fluid{
-        flex-direction: row;
-    }
-    .card {
-        width: 30rem!important;
-    }
-    .imgPortada{
-        width: 100%;
-        height: 55rem;
-}
-}
+/*# sourceMappingURL=style.css.map */

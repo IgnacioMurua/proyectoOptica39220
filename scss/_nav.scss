@@ -1,0 +1,29 @@
+nav{
+    grid-area: nav;
+    a{
+        text-decoration: none;
+        padding: 20px;
+        color: $color_1;
+    }
+    .container-fluid{
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: inherit;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Cinzel';
+        font-weight: bolder;  
+    }
+    .navbar-toggler{
+        background-color: $background-color_1;
+    }
+    .logo{
+        width: 115px;
+    }
+}
+
+
+
+
+
+

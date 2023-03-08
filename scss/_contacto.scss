@@ -1,0 +1,17 @@
+.contacto{
+    padding: 20px;
+    border: 7px solid $background-color_5;
+    background-color: $background-color_2;
+    .pForm{
+        color: $color_1;
+    }
+}
+
+.vision{
+    padding: 70px;
+    font-size: larger;
+    color: $color_1 ;
+    border: 7px solid $background-color_5;
+    background-color: $background-color_2;
+    display: flex;
+}
