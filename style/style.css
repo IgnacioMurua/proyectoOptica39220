@@ -12,7 +12,7 @@ nav .container-fluid {
   flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
-  font-family: "Cinzel";
+  font-family: "Raleway";
   font-weight: bolder;
 }
 nav .navbar-toggler {
@@ -22,37 +22,88 @@ nav .logo {
   width: 115px;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-a {
-  text-decoration: none;
-  padding: 20px;
-  color: #F9F9F9;
-}
-
-.encabezados {
-  font-family: "Raleway";
-  padding: 40px;
-  background-color: #34495E;
-  color: #F9F9F9;
-  display: flex;
-  justify-content: center;
-  margin: 0px;
-}
-
-h1 {
-  grid-area: titulo;
-}
-
 body {
   font-family: "Raleway";
   text-align: center;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+body .grillaGeneral {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: "nav" "titulo" "imgPortada" "footer";
+}
+body .boxIndex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body .boxIndex .indexBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 17rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: #F9F9F9;
+  background-color: #154360;
+}
+body .boxIndex .box1 {
+  background-color: #13374D;
+}
+body .boxIndex .box2 {
+  background-color: #3C4854;
+}
+body .boxIndex .box4 {
+  background-color: #222F3D;
+}
+body .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: #496683;
+  color: #F9F9F9;
+  width: 100%;
+  padding: 20px;
+}
+body .form .form-control {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .boton {
+  font-weight: bold;
+  background-color: #154360;
+  padding: 30px;
+  color: #F9F9F9;
+  border: 1px;
+  border-radius: 20px;
+}
+body .boton:hover {
+  transform: scale(1.2);
+}
+body .boton:hover {
+  transition-property: all;
+  transition-duration: 3s;
+}
+body .boton-2 {
+  background-color: #154360;
+  padding: 10px;
+  color: #F9F9F9;
+  border: 1px;
+  border-radius: 10px;
+}
+body .boton-2:hover {
+  transform: scale(1.2);
+}
+body .boton-2:hover {
+  transition-property: all;
+  transition-duration: 3s;
 }
 body img {
   width: 100%;
@@ -67,61 +118,6 @@ body img .imgPortada {
 }
 body .bodyB {
   background-color: #496683;
-}
-
-.grillaGeneral {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas: "nav" "titulo" "imgPortada" "footer";
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: large;
-  font-weight: bold;
-  background-color: #496683;
-  color: #F9F9F9;
-  width: 100%;
-  padding: 20px;
-}
-.form .form-control {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.boton {
-  font-weight: bold;
-  background-color: #154360;
-  padding: 30px;
-  color: #F9F9F9;
-  border: 1px;
-  border-radius: 20px;
-}
-.boton:hover {
-  transform: scale(1.2);
-}
-.boton:hover {
-  transition-property: all;
-  transition-duration: 3s;
-}
-
-.boton-2 {
-  background-color: #154360;
-  padding: 10px;
-  color: #F9F9F9;
-  border: 1px;
-  border-radius: 10px;
-}
-.boton-2:hover {
-  transform: scale(1.2);
-}
-.boton-2:hover {
-  transition-property: all;
-  transition-duration: 3s;
 }
 
 .tiendaProductos {
@@ -140,40 +136,6 @@ body .bodyB {
   background-color: #34495E;
   border: 4px solid #34495E;
   border-radius: 50px;
-}
-
-.contacto {
-  padding: 20px;
-  border: 7px solid #34495E;
-  background-color: #496683;
-}
-.contacto .pForm {
-  color: #F9F9F9;
-}
-
-.vision {
-  padding: 70px;
-  font-size: larger;
-  color: #F9F9F9;
-  border: 7px solid #34495E;
-  background-color: #496683;
-  display: flex;
-}
-
-.maps {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #496683;
-  padding-bottom: 3rem;
-}
-.maps .direcciones {
-  padding: 25px;
-  font-weight: bold;
-  color: #F9F9F9;
-}
-.maps div iframe {
-  width: 100%;
 }
 
 .clientes {
@@ -209,6 +171,24 @@ body .bodyB {
   height: 100%;
 }
 
+.contacto {
+  padding: 20px;
+  border: 7px solid #34495E;
+  background-color: #496683;
+}
+.contacto .pForm {
+  color: #F9F9F9;
+}
+
+.vision {
+  padding: 70px;
+  font-size: larger;
+  color: #F9F9F9;
+  border: 7px solid #34495E;
+  background-color: #496683;
+  display: flex;
+}
+
 footer {
   grid-area: footer;
   padding: 50px;
@@ -232,6 +212,31 @@ footer .redes {
   flex-direction: row;
   justify-content: center;
   column-gap: 4rem;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  padding: 20px;
+  color: #F9F9F9;
+}
+
+.encabezados {
+  font-family: "Raleway";
+  padding: 40px;
+  background-color: #34495E;
+  color: #F9F9F9;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+}
+
+h1 {
+  grid-area: titulo;
 }
 
 @media screen and (min-width: 400px) {
@@ -321,6 +326,21 @@ footer .redes {
     max-width: 100%;
     height: 100%;
   }
+}
+.maps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #496683;
+  padding-bottom: 3rem;
+}
+.maps .direcciones {
+  padding: 25px;
+  font-weight: bold;
+  color: #F9F9F9;
+}
+.maps div iframe {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

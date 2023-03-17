@@ -4,6 +4,92 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    .grillaGeneral{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav"
+        "titulo"
+        "imgPortada"
+        "footer";
+    }
+    .boxIndex{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .indexBox{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 50%;
+            height: 17rem;
+            font-size: 1.3rem;
+            text-align: center;
+            color: $color_1;
+            background-color: $background-color_4;
+        }
+        .box1{
+            background-color: $background-color_6;
+        }
+        .box2{
+            background-color: $background-color_7;
+        }
+        .box4{
+            background-color: $background-color_3;
+        }
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: large;
+        font-weight: bold;
+        background-color: $background-color_2;
+        color: $color_1;
+    
+        width: 100%;
+        padding: 20px;
+        .form-control{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+
+    .boton{
+        font-weight: bold;
+        background-color: $background-color_4;
+        padding: 30px;
+        color: $color_1;
+        border: 1px;
+        border-radius: 20px;
+        &:hover{
+            transform: scale(1.2);
+            &{
+                transition-property: all;
+                transition-duration: 3s;
+            }
+        }
+    }
+    
+    .boton-2{
+        background-color: $background-color_4;
+        padding: 10px;
+        color: $color_1;
+        border: 1px;
+        border-radius: 10px;
+        &:hover{
+            transform: scale(1.2);
+            &{
+                transition-property: all;
+                transition-duration: 3s;
+            }
+        }
+    }
+    
     img{
         width: 100%;
         .imgPortada{
@@ -21,71 +107,7 @@ body{
     }
 }
 
-.grillaGeneral{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "nav"
-    "titulo"
-    "imgPortada"
-    "footer";
-}
 
-
-.form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: large;
-    font-weight: bold;
-    background-color: $background-color_2;
-    color: $color_1;
-
-    width: 100%;
-    padding: 20px;
-    .form-control{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-}
-
-
-
-
-
-.boton{
-    font-weight: bold;
-    background-color: $background-color_4;
-    padding: 30px;
-    color: $color_1;
-    border: 1px;
-    border-radius: 20px;
-    &:hover{
-        transform: scale(1.2);
-        &{
-            transition-property: all;
-            transition-duration: 3s;
-        }
-    }
-}
-
-.boton-2{
-    background-color: $background-color_4;
-    padding: 10px;
-    color: $color_1;
-    border: 1px;
-    border-radius: 10px;
-    &:hover{
-        transform: scale(1.2);
-        &{
-            transition-property: all;
-            transition-duration: 3s;
-        }
-    }
-}
 
 
 
