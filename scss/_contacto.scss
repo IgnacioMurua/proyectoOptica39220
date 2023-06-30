@@ -1,17 +1,21 @@
 .contacto{
-    padding: 20px;
-    border: 7px solid $background-color_5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 0.5rem solid $background-color_5;
     background-color: $background-color_2;
     .pForm{
         color: $color_1;
+        width: 45vw;
     }
 }
 
 .vision{
-    padding: 70px;
-    font-size: larger;
+    padding: 4rem;
+    font-size: 1.5rem;
     color: $color_1 ;
-    border: 7px solid $background-color_5;
+    border: 0.5rem solid $background-color_5;
     background-color: $background-color_2;
     display: flex;
 }
